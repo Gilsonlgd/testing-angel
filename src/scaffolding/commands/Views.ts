@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { BaseCommand, Arg, RunnableArgs, renderTemplate } from 'angel-manager';
 
 export default class Components extends BaseCommand {
