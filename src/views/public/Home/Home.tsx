@@ -1,6 +1,8 @@
 import { useState, useLayoutEffect } from 'react';
 import './Home.scoped.css';
 
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { hello } from 'nameless-npm-package';
 import reactLogo from '@assets/brands/react.svg';
 import api from '@services/api';
 
@@ -15,7 +17,7 @@ function Home(): JSX.Element {
       );
       setLorem(data);
     };
-
+    hello();
     void loadLorem();
   }, []);
 
